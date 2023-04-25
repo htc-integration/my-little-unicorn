@@ -30,6 +30,10 @@ resource "testRessource2" {
   count = 5
 }
 
+resource "testRessource3" {
+  count = 5
+}
+
 
 
 
