@@ -26,6 +26,10 @@ resource "aws_s3_bucket" "example" { # Sensitive
   bucket = "example"
 }
 
+resource "testRessource2" {
+  count = 5
+}
+
 
 
 
