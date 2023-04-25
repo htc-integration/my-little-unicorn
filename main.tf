@@ -18,7 +18,13 @@ data "http" "myip" {
   url = "https://api.ipify.org"
 }
 
-resource "null_resource" "test" {
-  count = 5
+data "http2" {
+  url = "https://api.ipify.org2"
 }
+
+
+
+
+
+
 
