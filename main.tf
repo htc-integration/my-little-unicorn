@@ -22,10 +22,5 @@ resource "null_resource" "test" {
   count = 5
 }
 
-resource "aws_s3_bucket" "example" { # Sensitive
-  bucket = "example"
-}
-
-
 
 
