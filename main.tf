@@ -18,11 +18,13 @@ data "http" "myip" {
   url = "https://api.ipify.org"
 }
 
-data "http2" {
-  url = "https://api.ipify.org2"
+resource "null_resource" "test" {
+  count = 5
 }
 
-
+resource "aws_s3_bucket" "example" { # Sensitive
+  bucket = "example"
+}
 
 
 
